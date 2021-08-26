@@ -14,8 +14,8 @@ public class Fibonacci {
   private int numeroParaCalcular;
   private int numeroResultante;
 
-  public Fibonacci(int longitudSerie) {
-    this.numeroParaCalcular = longitudSerie;
+  public Fibonacci(int numeroParaCalcular) {
+    this.numeroParaCalcular = numeroParaCalcular;
   }
 
   /**
