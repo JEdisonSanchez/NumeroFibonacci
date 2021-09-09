@@ -46,6 +46,9 @@ public class Fibonacci {
     this.numeroResultante = numeroResultante;
   }
   
+  /**
+   * Método que permiter mostrar la serie Fibonacci del numero ingresado
+   */
   public void imprimirSerieFibonacci() {
     System.out.println("-----------------------");
     System.out.println("La serie fibonacci para el numero " + this.numeroParaCalcular + " es: ");
@@ -57,6 +60,9 @@ public class Fibonacci {
     System.out.println("-----------------------");
   }
   
+  /**
+   * Método que permiter mostrar si el ultimo número de la serie es primo
+   */
   public void imprimirPrimo() {
     if (this.esPrimo(this.numeroResultante)) {
       System.out.println(this.numeroResultante + " es primo");
@@ -65,6 +71,11 @@ public class Fibonacci {
     }
   }
   
+  /**
+   * Metodo que al enviarle por parametro un número, nos devuelve un valor
+   * boolean el cual indica si es primo (true) o no es primo (false)
+   * @param 
+   */
   private boolean esPrimo(int numero) {
     int contador = 0;
     boolean esPrimo = false;
@@ -78,7 +89,11 @@ public class Fibonacci {
     }
     return esPrimo;
   }
-
+  
+  /**
+   * Metodo que al enviarle por parametro un número, nos devuelve el 
+   * siguiente número de la serie fibonacci
+   */
   private int calcularFibonacci(int numero) {
     switch (numero) {
       case 0:
